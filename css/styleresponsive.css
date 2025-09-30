@@ -1,0 +1,110 @@
+/* 모바일 (작은 화면) */
+@media (max-width: 720px) {
+
+    .section {
+        min-height: auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .float-photo img {
+        width: calc(var(--size, 120px) * 0.5);
+    }
+
+    /* WORKS - 2열 유지 */
+    .gallery {
+        gap: 10px;
+    }
+
+    .card {
+        grid-column: span 6;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .thumb {
+        aspect-ratio: 16/9;
+        width: 100%;
+    }
+
+    .card iframe {
+        aspect-ratio: 16 / 9;
+        height: auto;
+    }
+
+    /* ABOUT - 프로필 이미지 */
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-width: 2px;
+    }
+
+    /* ABOUT - 카드 */
+    .about-card {
+        grid-column: span 12;
+        /* 세로 1열 */
+        padding: 14px;
+    }
+
+    .about-card img {
+        width: 30px;
+    }
+
+    html,
+    body {
+        height: auto;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    /* fullPage 전용 스크롤 해제 */
+
+    #main {
+        height: auto;
+    }
+
+    /* 100vh 고정 해제 */
+
+    .fp-section,
+    .section {
+        height: 80vh !important;
+        min-height: auto !important;
+        padding: 1.5rem 1rem !important;
+        /* 여백도 축소(원하면 더 줄여도 됨) */
+    }
+
+    .fp-tableCell {
+        height: auto !important;
+        vertical-align: initial !important;
+    }
+}
+
+/* 태블릿 (중간 화면) */
+@media (min-width: 721px) and (max-width: 1024px) {
+
+    .float-photo img {
+        width: calc(var(--size, 120px) * 0.7);
+    }
+
+    /* WORKS - 여전히 2열 */
+    .card {
+        grid-column: span 6;
+    }
+
+    /* ABOUT - 프로필 조금 줄이기 */
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* ABOUT - 카드 2열 */
+    .about-card {
+        grid-column: span 6;
+    }
+
+    .about-card img {
+        width: 40px;
+    }
+}
