@@ -16,7 +16,7 @@
     }
 
     .card {
-        grid-column: span 6;
+        grid-column: span 1;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -90,7 +90,7 @@
 
     /* WORKS - 여전히 2열 */
     .card {
-        grid-column: span 6;
+        grid-column: span 1;
     }
 
     /* ABOUT - 프로필 조금 줄이기 */
@@ -101,7 +101,7 @@
 
     /* ABOUT - 카드 2열 */
     .about-card {
-        grid-column: span 6;
+        grid-column: span 1;
     }
 
     .about-card img {
