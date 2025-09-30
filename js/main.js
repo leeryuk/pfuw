@@ -131,11 +131,11 @@ function setFloatPhotosVisible(show) {
 // ===== Floating Photos (Random Free Float) =====
 // 원하는 이미지 경로로 유지/수정
 const photos = [
-  '../image/taepoong_profile.png',
-  '../image/profile.png',
-  '../image/profile3.png',
-  '../image/leeryuk.jpg',
-  '../image/leeryuk3.png',
+  'image/taepoong_profile.png',
+  'image/profile.png',
+  'image/profile3.png',
+  'image/leeryuk.jpg',
+  'image/leeryuk3.png',
 ];
 
 // 상태값
